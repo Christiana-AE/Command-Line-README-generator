@@ -2,7 +2,7 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 import util from 'util';
 import path from 'path';
-const generateMarkdown = require("./utils/generateMarkdown");
+//const generateMarkdown = require("./utils/generateMarkdown");
 
 
 // const fs = require("fs");
@@ -89,10 +89,10 @@ const questions = () =>
 
 const generateReadMe = (answers) =>
 
-` # ${answers.projectTitle};
+` # ${answers.projectTitle}
  
 ## Description 
-${answers.Description};
+${answers.Description}
 
 ## Table of Contents 
 - [Description] (#Description)
@@ -104,25 +104,24 @@ ${answers.Description};
 - [Questions] (Questions)
 
 # Installation
-${answers.Installation};
+${answers.Installation}
 
 # Usage
-${answers.Usage};
+${answers.Usage}
 
 # License
-${answers.License};
+The license being used is: ${answers.License}
 
 # Contributing
-${answers.Contribution};
+${answers.Contribution}
 
 # Tests
-${answers.Test};
+${answers.Test}
 
 # Questions
-${answers.githubUser};
-"Link to my github profile is:" https://github.com/${answers.githubUser}
-"You can also contact me via email on" ${answers.email};
-
+My github username is: ${answers.githubUser};
+The link to my github profile is: https://github.com/${answers.githubUser}
+You can also contact me via email on: ${answers.email};
 `;
 
 // function to write README file
