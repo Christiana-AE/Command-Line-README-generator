@@ -92,13 +92,13 @@ const generateReadMe = (answers) =>
 ` # ${answers.projectTitle}
  
 ## Table of Contents 
-- [Description] (# description)
-- [Installation] (# installation)
-- [Usage] (# usage)
-- [License] (# license)
-- [Contributing] (# contributing)
-- [Tests] (# tests)
-- [Questions] (# questions)
+- [1. Description] (#description)
+- [2. Installation] (#installation)
+- [3. Usage] (#usage)
+- [4. License] (#license)
+- [5. Contributing] (#contributing)
+- [6. Tests] (#tests)
+- [7. Questions] (#questions)
 
 ## Description 
 ${answers.Description}
@@ -119,7 +119,7 @@ ${answers.Contribution}
 ${answers.Test}
 
 # Questions
-My github username is: ${answers.githubUser};
+My github username is: ${answers.githubUser}
 The link to my github profile is: https://github.com/${answers.githubUser}
 You can also contact me via email on: ${answers.email}
 `;
