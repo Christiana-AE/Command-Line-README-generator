@@ -91,17 +91,17 @@ const generateReadMe = (answers) =>
 
 ` # ${answers.projectTitle}
  
+## Table of Contents 
+- [Description] (# description)
+- [Installation] (# installation)
+- [Usage] (# usage)
+- [License] (# license)
+- [Contributing] (# contributing)
+- [Tests] (# tests)
+- [Questions] (# questions)
+
 ## Description 
 ${answers.Description}
-
-## Table of Contents 
-- [Description] (#Description)
-- [Installation] (#Installation)
-- [Usage] (#Usage)
-- [License] (#License)
-- [Contributing] (#Contributing)
-- [Tests] (Tests)
-- [Questions] (Questions)
 
 # Installation
 ${answers.Installation}
@@ -121,7 +121,7 @@ ${answers.Test}
 # Questions
 My github username is: ${answers.githubUser};
 The link to my github profile is: https://github.com/${answers.githubUser}
-You can also contact me via email on: ${answers.email};
+You can also contact me via email on: ${answers.email}
 `;
 
 // function to write README file
