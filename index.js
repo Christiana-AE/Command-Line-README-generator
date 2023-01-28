@@ -1,7 +1,17 @@
-const fs = require("fs");
-const path = require('path');
-const inquirer = require("inquirer");
+import inquirer from 'inquirer';
+import fs from 'fs';
+import util from 'util';
+import path from 'path';
 const generateMarkdown = require("./utils/generateMarkdown");
+
+
+// const fs = require("fs");
+// const path = require('path');
+// const inquirer = require("inquirer");
+// const generateMarkdown = require("./utils/generateMarkdown");
+
+const writeFileAsync = util.promisify(fs.writeFile);
+
 
 // array of questions for user
 const questions = () => 
@@ -62,18 +72,61 @@ const questions = () =>
             message: 'What is your email address?',
         }
 
-    ]
+    ]);
 
-    )
+    const answers = {
+        projectTitle: "",
+        Description: "",
+        Installation: "",
+        Usage: "",
+        License: "",
+        Contribution: "",
+        Test: "",
+        githubUser: "",
+        email: ""
+
+    };
+
+const generateReadMe = (answers) =>
+
+` # ${answers.projectTitle};
+ 
+## Description 
+${answers.Description};
+
+## Table of Contents 
+- [Description] (#Description)
+- [Installation] (#Installation)
+- [Usage] (#Usage)
+- [License] (#License)
+- [Contributing] (#Contributing)
+- [Tests] (Tests)
+- [Questions] (Questions)
+
+# Installation
+${answers.Installation};
+
+# Usage
+${answers.Usage};
+
+# License
+${answers.License};
+
+# Contributing
+${answers.Contribution};
+
+# Tests
+${answers.Test};
+
+# Questions
+${answers.githubUser};
+"Link to my github profile is:" https://github.com/${answers.githubUser}
+"You can also contact me via email on" ${answers.email};
+
+`;
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
+questions()
+.then((answers) => writeFileAsync('README.md', generateReadMe(answers)))
+.then(() => console.log('Successfully wrote to README.md'))
+.catch((err) => console.error(err));
