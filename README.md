@@ -1,13 +1,13 @@
  # Command-Line-README-generator
  
 ## Table of Contents 
-- [1. Description] (#description)
-- [2. Installation] (#installation)
-- [3. Usage] (#usage)
-- [4. License] (#license)
-- [5. Contributing] (#contributing)
-- [6. Tests] (#tests)
-- [7. Questions] (#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Description 
 Creation of a command-line application that dynamically generates a professional README.md file from a user's input
@@ -25,9 +25,9 @@ The license being used is: MIT License
 Christiana
 
 # Tests
-Normal Test
+Normal tests
 
 # Questions
-My github username is: Christiana-AE;
+My github username is: Christiana-AE
 The link to my github profile is: https://github.com/Christiana-AE
 You can also contact me via email on: christiana@gmail.com
