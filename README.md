@@ -13,21 +13,21 @@
 Creation of a command-line application that dynamically generates a professional README.md file from a user's input
 
 # Installation
-XYZ
+Dependency packages were installed from node package manager including inquirer package which will ease the process of providing error feedback, ask questions, parse input and validate answers. A gitignore file has been added to include data which should not be presented to GitHub
 
 # Usage
-Project is used by entering data
+This program will enable the user to compile details of the application being built and utilize this to automatically generate a README file 
 
 # License
-The license being used is: MIT License
+This application's license is: MIT License
 
 # Contributing
-Christiana
+Credit to node package manager for the module dependencies and documentation
 
 # Tests
-Normal tests
+Application was tested by simulating and running compiled code to GitHub
 
 # Questions
 My github username is: Christiana-AE
 The link to my github profile is: https://github.com/Christiana-AE
-You can also contact me via email on: christiana@gmail.com
+You can also contact me via email on: christiana@bootcamp.com
