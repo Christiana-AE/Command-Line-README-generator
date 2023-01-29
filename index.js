@@ -1,14 +1,8 @@
+// Import modules to be used 
 import inquirer from 'inquirer';
 import fs from 'fs';
 import util from 'util';
 import path from 'path';
-//const generateMarkdown = require("./utils/generateMarkdown");
-
-
-// const fs = require("fs");
-// const path = require('path');
-// const inquirer = require("inquirer");
-// const generateMarkdown = require("./utils/generateMarkdown");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -110,7 +104,7 @@ ${answers.Installation}
 ${answers.Usage}
 
 # License
-The license being used is: ${answers.License}
+This application's license is: ${answers.License}
 
 # Contributing
 ${answers.Contribution}

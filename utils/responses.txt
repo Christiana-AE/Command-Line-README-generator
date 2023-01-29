@@ -1,0 +1,20 @@
+Title
+Command-Line-README-generator
+
+Description
+Creation of a command-line application that dynamically generates a professional README.md file from a user's input
+
+Installation
+Dependency packages were installed from node package manager including inquirer package which will ease the process of providing error feedback, ask questions, parse input and validate answers. A gitignore file has been added to include data which should not be presented to GitHub
+
+Usage
+This program will enable the user to compile details of the application being built and utilize this to automatically generate a README file 
+
+Contributing
+Credit to node package manager for the module dependencies and documentation
+
+Tests
+Application was tested by simulating and running compiled code to GitHub
+
+GitHub username: Christiana-AE
+email: christiana@bootcamp.com
