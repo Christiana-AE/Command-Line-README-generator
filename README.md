@@ -31,3 +31,7 @@ Application was tested by simulating and running compiled code to GitHub
 My github username is: Christiana-AE
 The link to my github profile is: https://github.com/Christiana-AE
 You can also contact me via email on: christiana@bootcamp.com
+
+#Video Link 
+https://bootcampspot.instructure.com/media_objects_iframe/m-5763TfKWJqcYgeESdqz4w41T3nxEfbQf?type=video
+
